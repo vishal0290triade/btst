@@ -1,0 +1,104 @@
+{
+  "generated_at_ist": "2026-11-13T23:04:59.691805+05:30",
+  "india_vix": 15.49,
+  "indices": {
+    "nifty_50": {
+      "label": "Nifty 50",
+      "symbol": "^NSEI",
+      "session_date": "2026-11-13",
+      "spot": 25144.3,
+      "sma20": 23642.28,
+      "trend": "ABOVE 20-DMA",
+      "vwap_label": "TWAP",
+      "vwap": 25142.17,
+      "clv_pct": 47.0,
+      "r_intra_pct": -0.23,
+      "late_surge_pct": 0.23,
+      "hw_sync_pct": 55.1,
+      "exhaustion_warning": "No",
+      "score": 43.9,
+      "signal": "MODERATE BTST (Bullish)",
+      "structure": "Bull Call Debit Spread (Buy ATM CE + Sell ~0.25d OTM CE)",
+      "stop_loss": "Break below 3:00-3:30 PM Low (25,097.10)",
+      "exit_rule": "Book 50-100% at 9:15-9:20 AM gap open",
+      "hw_details": [
+        [
+          "HDFCBANK",
+          60.0
+        ],
+        [
+          "RELIANCE",
+          58.8
+        ],
+        [
+          "ICICIBANK",
+          88.8
+        ],
+        [
+          "INFY",
+          30.8
+        ],
+        [
+          "TCS",
+          14.6
+        ],
+        [
+          "AXISBANK",
+          36.0
+        ],
+        [
+          "SBIN",
+          35.9
+        ],
+        [
+          "KOTAKBANK",
+          79.5
+        ]
+      ],
+      "is_friday": true
+    },
+    "bank_nifty": {
+      "label": "Bank Nifty",
+      "symbol": "^NSEBANK",
+      "session_date": "2026-11-13",
+      "spot": 61034.1,
+      "sma20": 56496.99,
+      "trend": "ABOVE 20-DMA",
+      "vwap_label": "TWAP",
+      "vwap": 60998.5,
+      "clv_pct": 48.7,
+      "r_intra_pct": -0.43,
+      "late_surge_pct": 0.15,
+      "hw_sync_pct": 64.5,
+      "exhaustion_warning": "No",
+      "score": 45.9,
+      "signal": "MODERATE BTST (Bullish)",
+      "structure": "Bull Call Debit Spread (Buy ATM CE + Sell ~0.25d OTM CE)",
+      "stop_loss": "Break below 3:00-3:30 PM Low (60,921.00)",
+      "exit_rule": "Book 50-100% at 9:15-9:20 AM gap open",
+      "hw_details": [
+        [
+          "HDFCBANK",
+          60.0
+        ],
+        [
+          "ICICIBANK",
+          88.8
+        ],
+        [
+          "SBIN",
+          35.9
+        ],
+        [
+          "AXISBANK",
+          36.0
+        ],
+        [
+          "KOTAKBANK",
+          79.5
+        ]
+      ],
+      "is_friday": true
+    }
+  }
+}
