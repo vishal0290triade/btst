@@ -1,5 +1,5 @@
 ## BTST / STBT Automated Scan Report
-- **Run Time (IST):** `2026-11-13 23:18:49`
+- **Run Time (IST):** `2026-11-13 23:20:39`
 - **India VIX:** `15.49`
 
 | Metric | Nifty 50 (`^NSEI`) | Bank Nifty (`^NSEBANK`) |
