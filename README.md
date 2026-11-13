@@ -4,9 +4,9 @@ Empirical 10-year study (`2016-12-12` to `2026-11-12`) and live 3:15 PM IST diag
 
 ## Files
 - [fetch_and_backtest.py](fetch_and_backtest.py) — Fetches 10y daily + 60d 15m data for `^NSEI`, `^NSEBANK`, `^INDIAVIX`, and 8 heavyweight NSE constituents, runs the overnight/intraday decomposition, signal filter backtests, weekday seasonality, and Black-Scholes options simulations.
-- [btst_scanner.py](btst_scanner.py) — Live 3:15 PM IST scanner scoring Nifty 50 and Bank Nifty (`-100` to `+100`) with structure recommendations and stop-loss levels. Supports `--save-report` to write `reports/latest_scan.md` and `reports/latest_scan.json`.
+- [btst_scanner.py](btst_scanner.py) — Live 3:15 PM IST scanner and persistent paper trader scoring Nifty 50 (lot `75`) and Bank Nifty (lot `30`) (`-100` to `+100`), settling prior `OPEN` trades at 9:15 AM open, and retaining all daily trades in `reports/paper_trades.csv`, `reports/paper_trades.json`, and `reports/paper_trades_summary.md`.
 - [backtest_results.json](backtest_results.json) — Full serialized 10-year quantitative output.
-- [.github/workflows/btst_automation.yml](.github/workflows/btst_automation.yml) — GitHub Actions workflow for automated daily closing scans and weekly backtest refreshes.
+- [.github/workflows/btst_automation.yml](.github/workflows/btst_automation.yml) — GitHub Actions workflow for morning settlement, afternoon scan/paper entry, and weekly backtest refreshes.
 
 ## Quick Usage
 ```powershell
@@ -15,15 +15,16 @@ pip install -r requirements.txt
 # Refresh 10-year backtest and options simulation
 python fetch_and_backtest.py
 
-# Run live 3:15 PM BTST/STBT scanner (and optionally save Markdown/JSON reports)
-python btst_scanner.py --save-report
+# Run live scanner + settle open paper trades + seed 60-day history if missing
+python btst_scanner.py --save-report --seed-history
 ```
 
 ## GitHub Actions Automation
 The workflow in [.github/workflows/btst_automation.yml](.github/workflows/btst_automation.yml) runs automatically on GitHub:
-- **Mon–Fri at 3:15 PM IST (`45 9 * * 1-5` UTC):** Runs `btst_scanner.py --save-report`, publishes the scan table to the GitHub Actions Job Summary, uploads artifacts, and commits updated `reports/latest_scan.md` and `reports/latest_scan.json`.
-- **Fridays at 5:00 PM IST (`30 11 * * 5` UTC):** Refreshes the 10-year `backtest_results.json` via `fetch_and_backtest.py` alongside the report update.
-- **Manual Trigger (`workflow_dispatch`):** Run anytime from the **Actions** tab with an optional `run_backtest` toggle.
+- **Mon–Fri at 9:25 AM IST (`55 3 * * 1-5` UTC):** Runs `btst_scanner.py --save-report --settle-only` to settle the previous session's `OPEN` paper trades against the 9:15 AM open.
+- **Mon–Fri at 3:10 PM IST (`40 9 * * 1-5` UTC):** Runs `btst_scanner.py --save-report` to score the closing setup, record today's paper trade, and commit updated [reports/latest_scan.md](reports/latest_scan.md), [reports/paper_trades.csv](reports/paper_trades.csv), [reports/paper_trades.json](reports/paper_trades.json), and [reports/paper_trades_summary.md](reports/paper_trades_summary.md).
+- **Fridays at 5:00 PM IST (`30 11 * * 5` UTC):** Refreshes the 10-year `backtest_results.json` via `fetch_and_backtest.py`.
+- **Manual Trigger (`workflow_dispatch`):** Run anytime from the **Actions** tab with optional `run_backtest` and `seed_history` toggles.
 
 ## Key Empirical Findings (2016–2026)
 1. **Overnight vs. Intraday Split:** Overnight Close-to-Open drift delivered `+1,233.62%` (`30.57%` CAGR, `2.65` Sharpe) on Nifty 50 and `+758.41%` (`24.77%` CAGR, `1.80` Sharpe) on Bank Nifty, while intraday Open-to-Close returns were negative (`-77.03%` and `-61.64%`).
