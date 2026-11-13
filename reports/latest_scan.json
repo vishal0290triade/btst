@@ -1,11 +1,14 @@
 {
-  "generated_at_ist": "2026-11-13T23:04:59.691805+05:30",
+  "generated_at_ist": "2026-11-13T23:18:49.091469+05:30",
   "india_vix": 15.49,
   "indices": {
     "nifty_50": {
-      "label": "Nifty 50",
+      "trade_id": "2026-11-13_NIFTY",
       "symbol": "^NSEI",
-      "session_date": "2026-11-13",
+      "label": "Nifty 50",
+      "entry_date": "2026-11-13",
+      "weekday": "Fri",
+      "is_friday": true,
       "spot": 25144.3,
       "sma20": 23642.28,
       "trend": "ABOVE 20-DMA",
@@ -15,11 +18,22 @@
       "r_intra_pct": -0.23,
       "late_surge_pct": 0.23,
       "hw_sync_pct": 55.1,
+      "india_vix_entry": 15.49,
+      "exhaustion_flag": false,
       "exhaustion_warning": "No",
       "score": 43.9,
       "signal": "MODERATE BTST (Bullish)",
-      "structure": "Bull Call Debit Spread (Buy ATM CE + Sell ~0.25d OTM CE)",
+      "bias": "BULL",
+      "trade_taken": true,
+      "structure": "Bull Call Debit Spread (25150/25450 CE)",
+      "option_type": "CE_SPREAD",
+      "k_long": 25150.0,
+      "k_short": 25450.0,
+      "dte_entry": 4,
+      "lot_size": 75,
+      "entry_premium_pts": 110.35,
       "stop_loss": "Break below 3:00-3:30 PM Low (25,097.10)",
+      "stop_loss_level": 25097.1,
       "exit_rule": "Book 50-100% at 9:15-9:20 AM gap open",
       "hw_details": [
         [
@@ -54,13 +68,15 @@
           "KOTAKBANK",
           79.5
         ]
-      ],
-      "is_friday": true
+      ]
     },
     "bank_nifty": {
-      "label": "Bank Nifty",
+      "trade_id": "2026-11-13_BANKNIFTY",
       "symbol": "^NSEBANK",
-      "session_date": "2026-11-13",
+      "label": "Bank Nifty",
+      "entry_date": "2026-11-13",
+      "weekday": "Fri",
+      "is_friday": true,
       "spot": 61034.1,
       "sma20": 56496.99,
       "trend": "ABOVE 20-DMA",
@@ -70,11 +86,22 @@
       "r_intra_pct": -0.43,
       "late_surge_pct": 0.15,
       "hw_sync_pct": 64.5,
+      "india_vix_entry": 15.49,
+      "exhaustion_flag": false,
       "exhaustion_warning": "No",
       "score": 45.9,
       "signal": "MODERATE BTST (Bullish)",
-      "structure": "Bull Call Debit Spread (Buy ATM CE + Sell ~0.25d OTM CE)",
+      "bias": "BULL",
+      "trade_taken": true,
+      "structure": "Bull Call Debit Spread (61000/62500 CE)",
+      "option_type": "CE_SPREAD",
+      "k_long": 61000.0,
+      "k_short": 62500.0,
+      "dte_entry": 15,
+      "lot_size": 30,
+      "entry_premium_pts": 575.14,
       "stop_loss": "Break below 3:00-3:30 PM Low (60,921.00)",
+      "stop_loss_level": 60921.0,
       "exit_rule": "Book 50-100% at 9:15-9:20 AM gap open",
       "hw_details": [
         [
@@ -97,8 +124,37 @@
           "KOTAKBANK",
           79.5
         ]
-      ],
-      "is_friday": true
+      ]
+    }
+  },
+  "paper_trading_stats": {
+    "total_sessions_logged": 120,
+    "settled_sessions": 118,
+    "open_sessions": 2,
+    "active_trades_taken": 73,
+    "wins": 22,
+    "losses": 51,
+    "win_rate_pct": 30.14,
+    "total_option_pnl_pts": -728.54,
+    "total_option_pnl_inr": -27506.77,
+    "avg_roi_pct": -4.72,
+    "by_index": {
+      "Nifty 50": {
+        "trades": 38,
+        "wins": 11,
+        "win_rate_pct": 28.95,
+        "directional_gap_pts": 349.35,
+        "option_pnl_inr": -9419.41,
+        "avg_roi_pct": -7.15
+      },
+      "Bank Nifty": {
+        "trades": 35,
+        "wins": 11,
+        "win_rate_pct": 31.43,
+        "directional_gap_pts": 1320.35,
+        "option_pnl_inr": -18087.36,
+        "avg_roi_pct": -2.09
+      }
     }
   }
 }
