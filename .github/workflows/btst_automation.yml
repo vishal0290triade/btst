@@ -1,15 +1,22 @@
-name: BTST / STBT Automated Scanner & Backtest
+name: BTST / STBT Automated Scanner & Paper Trader
 
 on:
   schedule:
-    # Mon-Fri at 15:15 IST (09:45 UTC) — closing window BTST/STBT scan
-    - cron: '45 9 * * 1-5'
-    # Friday at 17:00 IST (11:30 UTC) — weekly 10-year backtest refresh
+    # Mon-Fri at 09:25 AM IST (03:55 UTC) — settle previous day's OPEN paper trades
+    - cron: '55 3 * * 1-5'
+    # Mon-Fri at 03:10 PM IST (09:40 UTC) — closing-window scan + new paper trade entry
+    - cron: '40 9 * * 1-5'
+    # Friday at 05:00 PM IST (11:30 UTC) — weekly 10-year backtest refresh
     - cron: '30 11 * * 5'
   workflow_dispatch:
     inputs:
       run_backtest:
         description: 'Refresh 10-year backtest_results.json'
+        required: false
+        type: boolean
+        default: false
+      seed_history:
+        description: 'Backfill missing 60-day paper trades into ledger'
         required: false
         type: boolean
         default: false
@@ -44,10 +51,20 @@ jobs:
         if: github.event.schedule == '30 11 * * 5' || inputs.run_backtest == true
         run: python fetch_and_backtest.py
 
-      - name: Run 3:15 PM BTST/STBT scanner
-        run: python btst_scanner.py --save-report
+      - name: Settle overnight paper trades (Morning 9:25 AM IST schedule)
+        if: github.event.schedule == '55 3 * * 1-5'
+        run: python btst_scanner.py --save-report --settle-only
 
-      - name: Publish scan to GitHub Step Summary
+      - name: Run 3:10 PM BTST/STBT scanner & record daily paper trade
+        if: github.event.schedule != '55 3 * * 1-5'
+        run: |
+          if [ "${{ inputs.seed_history }}" = "true" ]; then
+            python btst_scanner.py --save-report --seed-history
+          else
+            python btst_scanner.py --save-report
+          fi
+
+      - name: Publish scan & paper summary to GitHub Step Summary
         run: cat reports/latest_scan.md >> "$GITHUB_STEP_SUMMARY"
 
       - name: Upload reports and backtest artifact
@@ -59,14 +76,14 @@ jobs:
             backtest_results.json
           retention-days: 30
 
-      - name: Commit updated reports to main
+      - name: Commit updated reports and paper trade ledger to main
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add reports/latest_scan.md reports/latest_scan.json backtest_results.json
+          git add reports/latest_scan.md reports/latest_scan.json reports/paper_trades.csv reports/paper_trades.json reports/paper_trades_summary.md backtest_results.json
           if git diff --staged --quiet; then
             echo "No changes to commit."
           else
-            git commit -m "chore(scan): automated BTST/STBT update [skip ci]"
+            git commit -m "chore(scan): automated BTST/STBT scan & paper trade ledger [skip ci]"
             git push
           fi
