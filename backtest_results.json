@@ -1,0 +1,715 @@
+{
+  "generated_at": "2026-11-13T22:33:13.552347+05:30",
+  "india_vix": {
+    "latest": 15.49,
+    "median_10y": 14.8,
+    "p25_10y": 12.71,
+    "p75_10y": 18.3
+  },
+  "indices": {
+    "^NSEI": {
+      "symbol": "^NSEI",
+      "label": "Nifty 50",
+      "latest_close": 25144.3,
+      "latest_date": "2026-11-13",
+      "decomposition": {
+        "date_start": "2016-12-12",
+        "date_end": "2026-11-12",
+        "trading_days": 2447,
+        "overnight_only": {
+          "count": 2447,
+          "cumulative_return_pct": 1233.62,
+          "cagr_pct": 30.57,
+          "ann_volatility_pct": 10.26,
+          "sharpe_ratio": 2.65,
+          "win_rate_pct": 66.49,
+          "mean_pct": 0.108,
+          "median_pct": 0.1411,
+          "p01_pct": -2.035,
+          "p05_pct": -0.769,
+          "p95_pct": 0.853,
+          "p99_pct": 1.665
+        },
+        "intraday_only": {
+          "count": 2447,
+          "cumulative_return_pct": -77.03,
+          "cagr_pct": -14.06,
+          "ann_volatility_pct": 13.06,
+          "sharpe_ratio": -1.09,
+          "win_rate_pct": 47.45,
+          "mean_pct": -0.0567,
+          "median_pct": -0.0378,
+          "p01_pct": -2.206,
+          "p05_pct": -1.317,
+          "p95_pct": 1.082,
+          "p99_pct": 1.871
+        },
+        "buy_and_hold": {
+          "count": 2447,
+          "cumulative_return_pct": 207.73,
+          "cagr_pct": 12.27,
+          "ann_volatility_pct": 16.23,
+          "sharpe_ratio": 0.8,
+          "win_rate_pct": 53.94,
+          "mean_pct": 0.0512,
+          "median_pct": 0.0645,
+          "p01_pct": -2.646,
+          "p05_pct": -1.41,
+          "p95_pct": 1.475,
+          "p99_pct": 2.538
+        }
+      },
+      "setups": {
+        "Baseline (Every Night Long)": {
+          "trades": 2447,
+          "win_rate_pct": 66.49,
+          "mean_gap_pct": 0.108,
+          "median_gap_pct": 0.1411,
+          "profit_factor": 1.73,
+          "expectancy_points": 15.45,
+          "total_points": 37800.6,
+          "cum_return_pct": 1233.62,
+          "max_drawdown_pct": -26.87,
+          "p05_pct": -0.769,
+          "p95_pct": 0.853
+        },
+        "Setup A (CLV>=0.85 & Green Day)": {
+          "trades": 478,
+          "win_rate_pct": 71.97,
+          "mean_gap_pct": 0.1801,
+          "median_gap_pct": 0.1832,
+          "profit_factor": 2.65,
+          "expectancy_points": 29.61,
+          "total_points": 14151.3,
+          "cum_return_pct": 134.41,
+          "max_drawdown_pct": -3.75,
+          "p05_pct": -0.718,
+          "p95_pct": 0.881
+        },
+        "Setup B (Trend + CLV>=0.85 + Non-Exhaustion)": {
+          "trades": 294,
+          "win_rate_pct": 75.85,
+          "mean_gap_pct": 0.2,
+          "median_gap_pct": 0.1988,
+          "profit_factor": 3.54,
+          "expectancy_points": 31.7,
+          "total_points": 9318.6,
+          "cum_return_pct": 79.42,
+          "max_drawdown_pct": -2.55,
+          "p05_pct": -0.562,
+          "p95_pct": 0.846
+        },
+        "Setup C (Institutional Sync BTST)": {
+          "trades": 80,
+          "win_rate_pct": 75.0,
+          "mean_gap_pct": 0.1928,
+          "median_gap_pct": 0.2113,
+          "profit_factor": 3.21,
+          "expectancy_points": 35.08,
+          "total_points": 2806.7,
+          "cum_return_pct": 16.56,
+          "max_drawdown_pct": -2.0,
+          "p05_pct": -0.327,
+          "p95_pct": 0.812
+        },
+        "Setup D (Exhaustion Days R_intra>1.5%)": {
+          "trades": 46,
+          "win_rate_pct": 69.57,
+          "mean_gap_pct": 0.2235,
+          "median_gap_pct": 0.2851,
+          "profit_factor": 1.53,
+          "expectancy_points": 36.19,
+          "total_points": 1664.6,
+          "cum_return_pct": 9.91,
+          "max_drawdown_pct": -12.28,
+          "p05_pct": -1.468,
+          "p95_pct": 2.485
+        },
+        "Setup E (Bearish STBT / Put BTST)": {
+          "trades": 114,
+          "win_rate_pct": 36.84,
+          "mean_gap_pct": -0.1429,
+          "median_gap_pct": -0.1392,
+          "profit_factor": 0.63,
+          "expectancy_points": -11.88,
+          "total_points": -1354.7,
+          "cum_return_pct": -15.52,
+          "max_drawdown_pct": -19.03,
+          "p05_pct": -1.283,
+          "p95_pct": 1.099
+        }
+      },
+      "weekday_analysis": {
+        "Mon->Tue": {
+          "unconditional": {
+            "trades": 488,
+            "win_rate_pct": 70.9,
+            "mean_gap_pct": 0.1702,
+            "median_gap_pct": 0.1613,
+            "profit_factor": 2.7,
+            "expectancy_points": 26.61,
+            "total_points": 12983.3,
+            "cum_return_pct": 127.55,
+            "max_drawdown_pct": -4.71,
+            "p05_pct": -0.559,
+            "p95_pct": 0.86
+          },
+          "setup_c": {
+            "trades": 20,
+            "win_rate_pct": 65.0,
+            "mean_gap_pct": 0.1549,
+            "median_gap_pct": 0.1393,
+            "profit_factor": 3.32,
+            "expectancy_points": 28.18,
+            "total_points": 563.6,
+            "cum_return_pct": 3.13,
+            "max_drawdown_pct": -0.7,
+            "p05_pct": -0.297,
+            "p95_pct": 0.745
+          }
+        },
+        "Tue->Wed": {
+          "unconditional": {
+            "trades": 490,
+            "win_rate_pct": 66.73,
+            "mean_gap_pct": 0.1281,
+            "median_gap_pct": 0.1306,
+            "profit_factor": 2.26,
+            "expectancy_points": 17.78,
+            "total_points": 8712.9,
+            "cum_return_pct": 86.25,
+            "max_drawdown_pct": -5.24,
+            "p05_pct": -0.544,
+            "p95_pct": 0.734
+          },
+          "setup_c": {
+            "trades": 18,
+            "win_rate_pct": 94.44,
+            "mean_gap_pct": 0.341,
+            "median_gap_pct": 0.326,
+            "profit_factor": 22.31,
+            "expectancy_points": 48.35,
+            "total_points": 870.3,
+            "cum_return_pct": 6.31,
+            "max_drawdown_pct": -0.29,
+            "p05_pct": 0.002,
+            "p95_pct": 0.693
+          }
+        },
+        "Wed->Thu": {
+          "unconditional": {
+            "trades": 493,
+            "win_rate_pct": 64.3,
+            "mean_gap_pct": 0.0881,
+            "median_gap_pct": 0.1202,
+            "profit_factor": 1.56,
+            "expectancy_points": 13.24,
+            "total_points": 6526.8,
+            "cum_return_pct": 52.9,
+            "max_drawdown_pct": -8.6,
+            "p05_pct": -0.8,
+            "p95_pct": 0.821
+          },
+          "setup_c": {
+            "trades": 13,
+            "win_rate_pct": 84.62,
+            "mean_gap_pct": 0.204,
+            "median_gap_pct": 0.3045,
+            "profit_factor": 2.67,
+            "expectancy_points": 38.89,
+            "total_points": 505.6,
+            "cum_return_pct": 2.67,
+            "max_drawdown_pct": -1.44,
+            "p05_pct": -0.665,
+            "p95_pct": 0.782
+          }
+        },
+        "Thu->Fri": {
+          "unconditional": {
+            "trades": 493,
+            "win_rate_pct": 63.89,
+            "mean_gap_pct": 0.0718,
+            "median_gap_pct": 0.1366,
+            "profit_factor": 1.44,
+            "expectancy_points": 9.98,
+            "total_points": 4921.5,
+            "cum_return_pct": 41.01,
+            "max_drawdown_pct": -10.28,
+            "p05_pct": -0.838,
+            "p95_pct": 0.825
+          },
+          "setup_c": {
+            "trades": 14,
+            "win_rate_pct": 71.43,
+            "mean_gap_pct": 0.1229,
+            "median_gap_pct": 0.1781,
+            "profit_factor": 2.84,
+            "expectancy_points": 20.85,
+            "total_points": 291.9,
+            "cum_return_pct": 1.73,
+            "max_drawdown_pct": -0.76,
+            "p05_pct": -0.328,
+            "p95_pct": 0.553
+          }
+        },
+        "Fri->Mon": {
+          "unconditional": {
+            "trades": 482,
+            "win_rate_pct": 66.8,
+            "mean_gap_pct": 0.0838,
+            "median_gap_pct": 0.1541,
+            "profit_factor": 1.39,
+            "expectancy_points": 10.0,
+            "total_points": 4818.9,
+            "cum_return_pct": 46.97,
+            "max_drawdown_pct": -18.35,
+            "p05_pct": -1.061,
+            "p95_pct": 1.068
+          },
+          "setup_c": {
+            "trades": 15,
+            "win_rate_pct": 60.0,
+            "mean_gap_pct": 0.121,
+            "median_gap_pct": 0.08,
+            "profit_factor": 1.64,
+            "expectancy_points": 38.36,
+            "total_points": 575.3,
+            "cum_return_pct": 1.79,
+            "max_drawdown_pct": -2.66,
+            "p05_pct": -1.031,
+            "p95_pct": 1.235
+          }
+        }
+      },
+      "intraday_60d": {
+        "benchmark_used": "TWAP (index 15m volume=0)",
+        "all_days": {
+          "days": 59,
+          "win_rate_pct": 52.54,
+          "mean_gap_pct": 0.0515,
+          "median_gap_pct": 0.0065
+        },
+        "bull_above_vwap_late_surge": {
+          "days": 28,
+          "win_rate_pct": 46.43,
+          "mean_gap_pct": 0.0289,
+          "median_gap_pct": -0.0196
+        },
+        "bear_below_vwap_late_drop_stbt": {
+          "days": 16,
+          "win_rate_pct": 50.0,
+          "mean_gap_pct": -0.014,
+          "median_gap_pct": -0.0263
+        }
+      },
+      "options_simulation": {
+        "reference_spot": 25144.3,
+        "assumed_iv_pct": 14.8,
+        "iv_crush_pct_pts": 0.75,
+        "dte_entry_days": 4,
+        "structures": {
+          "OTM Call (~0.25 Delta)": {
+            "entry_cost_pts": 52.82,
+            "k_long": 25450.0,
+            "k_short": null,
+            "actual_calendar_dte_win_rate_pct": 27.5,
+            "actual_calendar_dte_mean_roi_pct": -21.92,
+            "actual_calendar_dte_median_roi_pct": -23.96,
+            "actual_calendar_dte_profit_factor": 0.33,
+            "actual_calendar_dte_p05_roi_pct": -95.67,
+            "overnight_1d_win_rate_pct": 31.25,
+            "overnight_1d_mean_roi_pct": -9.58
+          },
+          "ATM Call (~0.50 Delta)": {
+            "entry_cost_pts": 161.56,
+            "k_long": 25150.0,
+            "k_short": null,
+            "actual_calendar_dte_win_rate_pct": 42.5,
+            "actual_calendar_dte_mean_roi_pct": -3.75,
+            "actual_calendar_dte_median_roi_pct": -4.34,
+            "actual_calendar_dte_profit_factor": 0.78,
+            "actual_calendar_dte_p05_roi_pct": -67.02,
+            "overnight_1d_win_rate_pct": 47.5,
+            "overnight_1d_mean_roi_pct": 2.74
+          },
+          "ITM Call (~0.65 Delta)": {
+            "entry_cost_pts": 249.27,
+            "k_long": 25000.0,
+            "k_short": null,
+            "actual_calendar_dte_win_rate_pct": 55.0,
+            "actual_calendar_dte_mean_roi_pct": 2.16,
+            "actual_calendar_dte_median_roi_pct": 2.17,
+            "actual_calendar_dte_profit_factor": 1.2,
+            "actual_calendar_dte_p05_roi_pct": -45.99,
+            "overnight_1d_win_rate_pct": 58.75,
+            "overnight_1d_mean_roi_pct": 5.62
+          },
+          "Bull Call Debit Spread (ATM - OTM)": {
+            "entry_cost_pts": 108.73,
+            "k_long": 25150.0,
+            "k_short": 25450.0,
+            "actual_calendar_dte_win_rate_pct": 61.25,
+            "actual_calendar_dte_mean_roi_pct": 5.09,
+            "actual_calendar_dte_median_roi_pct": 6.7,
+            "actual_calendar_dte_profit_factor": 1.45,
+            "actual_calendar_dte_p05_roi_pct": -57.75,
+            "overnight_1d_win_rate_pct": 63.75,
+            "overnight_1d_mean_roi_pct": 8.72
+          }
+        }
+      }
+    },
+    "^NSEBANK": {
+      "symbol": "^NSEBANK",
+      "label": "Bank Nifty",
+      "latest_close": 61034.1,
+      "latest_date": "2026-11-13",
+      "decomposition": {
+        "date_start": "2016-12-12",
+        "date_end": "2026-11-12",
+        "trading_days": 2448,
+        "overnight_only": {
+          "count": 2448,
+          "cumulative_return_pct": 758.41,
+          "cagr_pct": 24.77,
+          "ann_volatility_pct": 12.75,
+          "sharpe_ratio": 1.8,
+          "win_rate_pct": 61.89,
+          "mean_pct": 0.0911,
+          "median_pct": 0.123,
+          "p01_pct": -2.288,
+          "p05_pct": -1.003,
+          "p95_pct": 1.067,
+          "p99_pct": 2.182
+        },
+        "intraday_only": {
+          "count": 2448,
+          "cumulative_return_pct": -61.64,
+          "cagr_pct": -9.39,
+          "ann_volatility_pct": 17.84,
+          "sharpe_ratio": -0.46,
+          "win_rate_pct": 47.92,
+          "mean_pct": -0.0328,
+          "median_pct": -0.0344,
+          "p01_pct": -3.051,
+          "p05_pct": -1.713,
+          "p95_pct": 1.574,
+          "p99_pct": 2.697
+        },
+        "buy_and_hold": {
+          "count": 2448,
+          "cumulative_return_pct": 231.83,
+          "cagr_pct": 13.14,
+          "ann_volatility_pct": 21.5,
+          "sharpe_ratio": 0.68,
+          "win_rate_pct": 53.51,
+          "mean_pct": 0.0583,
+          "median_pct": 0.0833,
+          "p01_pct": -3.587,
+          "p05_pct": -1.807,
+          "p95_pct": 1.995,
+          "p99_pct": 3.675
+        }
+      },
+      "setups": {
+        "Baseline (Every Night Long)": {
+          "trades": 2448,
+          "win_rate_pct": 61.89,
+          "mean_gap_pct": 0.0911,
+          "median_gap_pct": 0.123,
+          "profit_factor": 1.46,
+          "expectancy_points": 26.98,
+          "total_points": 66059.1,
+          "cum_return_pct": 758.41,
+          "max_drawdown_pct": -31.48,
+          "p05_pct": -1.003,
+          "p95_pct": 1.067
+        },
+        "Setup A (CLV>=0.85 & Green Day)": {
+          "trades": 413,
+          "win_rate_pct": 68.77,
+          "mean_gap_pct": 0.1948,
+          "median_gap_pct": 0.1932,
+          "profit_factor": 2.21,
+          "expectancy_points": 71.92,
+          "total_points": 29702.6,
+          "cum_return_pct": 120.62,
+          "max_drawdown_pct": -4.46,
+          "p05_pct": -0.848,
+          "p95_pct": 1.154
+        },
+        "Setup B (Trend + CLV>=0.85 + Non-Exhaustion)": {
+          "trades": 179,
+          "win_rate_pct": 64.8,
+          "mean_gap_pct": 0.1178,
+          "median_gap_pct": 0.1438,
+          "profit_factor": 1.89,
+          "expectancy_points": 47.38,
+          "total_points": 8481.6,
+          "cum_return_pct": 23.19,
+          "max_drawdown_pct": -2.78,
+          "p05_pct": -0.753,
+          "p95_pct": 0.868
+        },
+        "Setup C (Institutional Sync BTST)": {
+          "trades": 82,
+          "win_rate_pct": 56.1,
+          "mean_gap_pct": 0.0503,
+          "median_gap_pct": 0.1014,
+          "profit_factor": 1.34,
+          "expectancy_points": 19.51,
+          "total_points": 1599.6,
+          "cum_return_pct": 4.13,
+          "max_drawdown_pct": -2.79,
+          "p05_pct": -0.691,
+          "p95_pct": 0.763
+        },
+        "Setup D (Exhaustion Days R_intra>1.5%)": {
+          "trades": 133,
+          "win_rate_pct": 76.69,
+          "mean_gap_pct": 0.3726,
+          "median_gap_pct": 0.434,
+          "profit_factor": 2.24,
+          "expectancy_points": 124.16,
+          "total_points": 16513.4,
+          "cum_return_pct": 61.39,
+          "max_drawdown_pct": -15.35,
+          "p05_pct": -1.59,
+          "p95_pct": 2.289
+        },
+        "Setup E (Bearish STBT / Put BTST)": {
+          "trades": 142,
+          "win_rate_pct": 43.66,
+          "mean_gap_pct": -0.1346,
+          "median_gap_pct": -0.1348,
+          "profit_factor": 0.68,
+          "expectancy_points": -4.02,
+          "total_points": -570.7,
+          "cum_return_pct": -18.14,
+          "max_drawdown_pct": -30.54,
+          "p05_pct": -1.627,
+          "p95_pct": 1.426
+        }
+      },
+      "weekday_analysis": {
+        "Mon->Tue": {
+          "unconditional": {
+            "trades": 489,
+            "win_rate_pct": 64.62,
+            "mean_gap_pct": 0.1724,
+            "median_gap_pct": 0.1652,
+            "profit_factor": 2.24,
+            "expectancy_points": 57.7,
+            "total_points": 28215.3,
+            "cum_return_pct": 129.5,
+            "max_drawdown_pct": -6.51,
+            "p05_pct": -0.692,
+            "p95_pct": 1.155
+          },
+          "setup_c": {
+            "trades": 14,
+            "win_rate_pct": 71.43,
+            "mean_gap_pct": 0.1469,
+            "median_gap_pct": 0.1634,
+            "profit_factor": 2.53,
+            "expectancy_points": 54.35,
+            "total_points": 761.0,
+            "cum_return_pct": 2.07,
+            "max_drawdown_pct": -0.68,
+            "p05_pct": -0.366,
+            "p95_pct": 0.638
+          }
+        },
+        "Tue->Wed": {
+          "unconditional": {
+            "trades": 491,
+            "win_rate_pct": 60.08,
+            "mean_gap_pct": 0.103,
+            "median_gap_pct": 0.093,
+            "profit_factor": 1.68,
+            "expectancy_points": 31.73,
+            "total_points": 15579.8,
+            "cum_return_pct": 64.21,
+            "max_drawdown_pct": -5.48,
+            "p05_pct": -0.779,
+            "p95_pct": 0.953
+          },
+          "setup_c": {
+            "trades": 18,
+            "win_rate_pct": 44.44,
+            "mean_gap_pct": 0.0088,
+            "median_gap_pct": -0.0378,
+            "profit_factor": 1.06,
+            "expectancy_points": 1.69,
+            "total_points": 30.4,
+            "cum_return_pct": 0.15,
+            "max_drawdown_pct": -1.43,
+            "p05_pct": -0.632,
+            "p95_pct": 0.652
+          }
+        },
+        "Wed->Thu": {
+          "unconditional": {
+            "trades": 493,
+            "win_rate_pct": 61.66,
+            "mean_gap_pct": 0.0552,
+            "median_gap_pct": 0.1102,
+            "profit_factor": 1.26,
+            "expectancy_points": 16.39,
+            "total_points": 8080.7,
+            "cum_return_pct": 29.45,
+            "max_drawdown_pct": -10.27,
+            "p05_pct": -1.087,
+            "p95_pct": 0.922
+          },
+          "setup_c": {
+            "trades": 15,
+            "win_rate_pct": 66.67,
+            "mean_gap_pct": 0.1661,
+            "median_gap_pct": 0.1788,
+            "profit_factor": 3.69,
+            "expectancy_points": 73.25,
+            "total_points": 1098.8,
+            "cum_return_pct": 2.51,
+            "max_drawdown_pct": -0.47,
+            "p05_pct": -0.265,
+            "p95_pct": 0.607
+          }
+        },
+        "Thu->Fri": {
+          "unconditional": {
+            "trades": 493,
+            "win_rate_pct": 59.63,
+            "mean_gap_pct": 0.0411,
+            "median_gap_pct": 0.1056,
+            "profit_factor": 1.19,
+            "expectancy_points": 10.69,
+            "total_points": 5272.3,
+            "cum_return_pct": 20.5,
+            "max_drawdown_pct": -14.14,
+            "p05_pct": -1.021,
+            "p95_pct": 0.908
+          },
+          "setup_c": {
+            "trades": 19,
+            "win_rate_pct": 63.16,
+            "mean_gap_pct": 0.0406,
+            "median_gap_pct": 0.1678,
+            "profit_factor": 1.18,
+            "expectancy_points": 1.13,
+            "total_points": 21.5,
+            "cum_return_pct": 0.74,
+            "max_drawdown_pct": -2.13,
+            "p05_pct": -1.154,
+            "p95_pct": 0.984
+          }
+        },
+        "Fri->Mon": {
+          "unconditional": {
+            "trades": 482,
+            "win_rate_pct": 63.49,
+            "mean_gap_pct": 0.0842,
+            "median_gap_pct": 0.1303,
+            "profit_factor": 1.31,
+            "expectancy_points": 18.49,
+            "total_points": 8910.9,
+            "cum_return_pct": 46.02,
+            "max_drawdown_pct": -20.52,
+            "p05_pct": -1.387,
+            "p95_pct": 1.549
+          },
+          "setup_c": {
+            "trades": 16,
+            "win_rate_pct": 37.5,
+            "mean_gap_pct": -0.0844,
+            "median_gap_pct": -0.1062,
+            "profit_factor": 0.56,
+            "expectancy_points": -19.5,
+            "total_points": -312.0,
+            "cum_return_pct": -1.35,
+            "max_drawdown_pct": -1.56,
+            "p05_pct": -0.766,
+            "p95_pct": 0.376
+          }
+        }
+      },
+      "intraday_60d": {
+        "benchmark_used": "TWAP (index 15m volume=0)",
+        "all_days": {
+          "days": 59,
+          "win_rate_pct": 45.76,
+          "mean_gap_pct": 0.0328,
+          "median_gap_pct": -0.0089
+        },
+        "bull_above_vwap_late_surge": {
+          "days": 26,
+          "win_rate_pct": 46.15,
+          "mean_gap_pct": 0.0358,
+          "median_gap_pct": -0.0118
+        },
+        "bear_below_vwap_late_drop_stbt": {
+          "days": 17,
+          "win_rate_pct": 58.82,
+          "mean_gap_pct": -0.0154,
+          "median_gap_pct": 0.0105
+        }
+      },
+      "options_simulation": {
+        "reference_spot": 61034.1,
+        "assumed_iv_pct": 14.8,
+        "iv_crush_pct_pts": 0.75,
+        "dte_entry_days": 15,
+        "structures": {
+          "OTM Call (~0.25 Delta)": {
+            "entry_cost_pts": 263.49,
+            "k_long": 62500.0,
+            "k_short": null,
+            "actual_calendar_dte_win_rate_pct": 24.39,
+            "actual_calendar_dte_mean_roi_pct": -17.08,
+            "actual_calendar_dte_median_roi_pct": -18.37,
+            "actual_calendar_dte_profit_factor": 0.17,
+            "actual_calendar_dte_p05_roi_pct": -54.02,
+            "overnight_1d_win_rate_pct": 25.61,
+            "overnight_1d_mean_roi_pct": -13.59
+          },
+          "ATM Call (~0.50 Delta)": {
+            "entry_cost_pts": 831.97,
+            "k_long": 61000.0,
+            "k_short": null,
+            "actual_calendar_dte_win_rate_pct": 34.15,
+            "actual_calendar_dte_mean_roi_pct": -6.5,
+            "actual_calendar_dte_median_roi_pct": -5.26,
+            "actual_calendar_dte_profit_factor": 0.4,
+            "actual_calendar_dte_p05_roi_pct": -33.25,
+            "overnight_1d_win_rate_pct": 39.02,
+            "overnight_1d_mean_roi_pct": -4.86
+          },
+          "ITM Call (~0.65 Delta)": {
+            "entry_cost_pts": 1126.45,
+            "k_long": 60500.0,
+            "k_short": null,
+            "actual_calendar_dte_win_rate_pct": 41.46,
+            "actual_calendar_dte_mean_roi_pct": -4.23,
+            "actual_calendar_dte_median_roi_pct": -3.19,
+            "actual_calendar_dte_profit_factor": 0.51,
+            "actual_calendar_dte_p05_roi_pct": -28.66,
+            "overnight_1d_win_rate_pct": 46.34,
+            "overnight_1d_mean_roi_pct": -3.05
+          },
+          "Bull Call Debit Spread (ATM - OTM)": {
+            "entry_cost_pts": 568.48,
+            "k_long": 61000.0,
+            "k_short": 62500.0,
+            "actual_calendar_dte_win_rate_pct": 50.0,
+            "actual_calendar_dte_mean_roi_pct": -1.6,
+            "actual_calendar_dte_median_roi_pct": -0.08,
+            "actual_calendar_dte_profit_factor": 0.77,
+            "actual_calendar_dte_p05_roi_pct": -25.99,
+            "overnight_1d_win_rate_pct": 51.22,
+            "overnight_1d_mean_roi_pct": -0.82
+          }
+        }
+      }
+    }
+  }
+}
