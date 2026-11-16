@@ -1,6 +1,6 @@
 {
-  "generated_at_ist": "2026-11-16T17:38:10.828750+05:30",
-  "india_vix": 15.68,
+  "generated_at_ist": "2026-11-17T01:19:35.580614+05:30",
+  "india_vix": 15.5,
   "indices": {
     "nifty_50": {
       "trade_id": "2026-11-16_NIFTY",
@@ -18,7 +18,7 @@
       "r_intra_pct": 0.34,
       "late_surge_pct": 0.29,
       "hw_sync_pct": 60.5,
-      "india_vix_entry": 15.68,
+      "india_vix_entry": 15.5,
       "exhaustion_flag": false,
       "exhaustion_warning": "No",
       "score": 63.1,
@@ -31,7 +31,7 @@
       "k_short": null,
       "dte_entry": 4,
       "lot_size": 75,
-      "entry_premium_pts": 256.61,
+      "entry_premium_pts": 254.88,
       "stop_loss": "Break below 3:00-3:30 PM Low (25,202.50)",
       "stop_loss_level": 25202.5,
       "exit_rule": "Book 50-100% at 9:15-9:20 AM gap open",
@@ -86,7 +86,7 @@
       "r_intra_pct": 0.57,
       "late_surge_pct": 0.26,
       "hw_sync_pct": 60.7,
-      "india_vix_entry": 15.68,
+      "india_vix_entry": 15.5,
       "exhaustion_flag": false,
       "exhaustion_warning": "No",
       "score": 62.2,
@@ -99,7 +99,7 @@
       "k_short": null,
       "dte_entry": 15,
       "lot_size": 30,
-      "entry_premium_pts": 1200.6,
+      "entry_premium_pts": 1192.43,
       "stop_loss": "Break below 3:00-3:30 PM Low (61,369.70)",
       "stop_loss_level": 61369.7,
       "exit_rule": "Book 50-100% at 9:15-9:20 AM gap open",
@@ -128,9 +128,9 @@
     }
   },
   "paper_trading_stats": {
-    "total_sessions_logged": 120,
+    "total_sessions_logged": 122,
     "settled_sessions": 120,
-    "open_sessions": 0,
+    "open_sessions": 2,
     "active_trades_taken": 75,
     "wins": 23,
     "losses": 52,

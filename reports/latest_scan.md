@@ -1,6 +1,6 @@
 ## BTST / STBT Automated Scan Report
-- **Run Time (IST):** `2026-11-16 17:38:10`
-- **India VIX:** `15.68`
+- **Run Time (IST):** `2026-11-17 01:19:35`
+- **India VIX:** `15.50`
 
 | Metric | Nifty 50 (`^NSEI`) | Bank Nifty (`^NSEBANK`) |
 | :--- | :--- | :--- |
@@ -10,7 +10,7 @@
 | **CLV / Day Body / Late Surge** | `71.9%` / `+0.34%` / `+0.29%` | `72.2%` / `+0.57%` / `+0.26%` |
 | **Heavyweight Sync** | `60.5%` | `60.7%` |
 | **BTST Score & Signal** | **`+63.1 / 100`** — STRONG BTST (Bullish) | **`+62.2 / 100`** — STRONG BTST (Bullish) |
-| **Paper Trade Structure** | Slightly ITM Call (25150 CE) (`256.61` pts) | Slightly ITM Call (61000 CE) (`1200.60` pts) |
+| **Paper Trade Structure** | Slightly ITM Call (25150 CE) (`254.88` pts) | Slightly ITM Call (61000 CE) (`1192.43` pts) |
 | **Stop-Loss** | Break below 3:00-3:30 PM Low (25,202.50) | Break below 3:00-3:30 PM Low (61,369.70) |
 | **Morning Exit** | Book 50-100% at 9:15-9:20 AM gap open | Book 50-100% at 9:15-9:20 AM gap open |
 
@@ -21,7 +21,7 @@
 ---
 
 ## Paper Trading Cumulative Summary
-- **Retained Dataset:** `120` sessions (`120` settled, `0` open) — see [paper_trades.csv](paper_trades.csv) & [paper_trades_summary.md](paper_trades_summary.md)
+- **Retained Dataset:** `122` sessions (`120` settled, `2` open) — see [paper_trades.csv](paper_trades.csv) & [paper_trades_summary.md](paper_trades_summary.md)
 - **Active Trades Taken:** `75` (`23W / 52L`, **30.67%** win rate)
 - **Cumulative Option P&L:** **`₹-27,268.49`** (`-4.64%` avg ROI/trade)
 
@@ -29,6 +29,8 @@
 
 | Date | Index | Score | Structure | Entry Spot | Exit Open | Gap % | Option P&L (INR) | ROI % | Status |
 | :--- | :--- | ---: | :--- | ---: | ---: | ---: | ---: | ---: | :--- |
+| 2026-11-16 | Nifty 50 | +63.1 | Slightly ITM Call (25150 CE) | 25,291.10 | - | - | - | - | OPEN |
+| 2026-11-16 | Bank Nifty | +62.2 | Slightly ITM Call (61000 CE) | 61,575.90 | - | - | - | - | OPEN |
 | 2026-11-13 | Nifty 50 | +43.9 | Bull Call Debit Spread (25150/25450 CE) | 25,144.30 | 25,206.15 | +0.25% | ₹-690.37 | -8.34% | LOSS |
 | 2026-11-13 | Bank Nifty | +45.9 | Bull Call Debit Spread (61000/62500 CE) | 61,034.10 | 61,229.90 | +0.32% | ₹+928.65 | +5.38% | WIN |
 | 2026-11-12 | Nifty 50 | +61.3 | Bull Call Debit Spread (25300/25600 CE) | 25,299.35 | 25,201.90 | -0.39% | ₹-2,643.42 | -30.86% | LOSS |
@@ -42,5 +44,3 @@
 | 2026-11-05 | Nifty 50 | +68.6 | Slightly ITM Call (24400 CE) | 24,536.60 | 24,518.20 | -0.07% | ₹-3,057.49 | -16.45% | LOSS |
 | 2026-11-05 | Bank Nifty | +79.3 | Slightly ITM Call (57300 CE) | 57,773.65 | 57,692.25 | -0.14% | ₹-3,396.06 | -10.48% | LOSS |
 | 2026-11-04 | Nifty 50 | +76.7 | Slightly ITM Call (23850 CE) | 23,960.60 | 24,378.05 | +1.74% | ₹+24,189.13 | +144.08% | WIN |
-| 2026-11-04 | Bank Nifty | +65.7 | Slightly ITM Call (55400 CE) | 55,913.60 | 57,086.70 | +2.10% | ₹+25,791.39 | +80.81% | WIN |
-| 2026-11-03 | Nifty 50 | +91.2 | Slightly ITM Call (23700 CE) | 23,810.85 | 23,734.15 | -0.32% | ₹-5,616.20 | -32.84% | LOSS |
