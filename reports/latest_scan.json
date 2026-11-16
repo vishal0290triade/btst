@@ -1,159 +1,159 @@
 {
-  "generated_at_ist": "2026-11-13T23:20:39.673966+05:30",
-  "india_vix": 15.49,
+  "generated_at_ist": "2026-11-16T17:38:10.828750+05:30",
+  "india_vix": 15.68,
   "indices": {
     "nifty_50": {
-      "trade_id": "2026-11-13_NIFTY",
+      "trade_id": "2026-11-16_NIFTY",
       "symbol": "^NSEI",
       "label": "Nifty 50",
-      "entry_date": "2026-11-13",
-      "weekday": "Fri",
-      "is_friday": true,
-      "spot": 25144.3,
-      "sma20": 23642.28,
+      "entry_date": "2026-11-16",
+      "weekday": "Mon",
+      "is_friday": false,
+      "spot": 25291.1,
+      "sma20": 23756.97,
       "trend": "ABOVE 20-DMA",
       "vwap_label": "TWAP",
-      "vwap": 25142.17,
-      "clv_pct": 47.0,
-      "r_intra_pct": -0.23,
-      "late_surge_pct": 0.23,
-      "hw_sync_pct": 55.1,
-      "india_vix_entry": 15.49,
+      "vwap": 25247.65,
+      "clv_pct": 71.9,
+      "r_intra_pct": 0.34,
+      "late_surge_pct": 0.29,
+      "hw_sync_pct": 60.5,
+      "india_vix_entry": 15.68,
       "exhaustion_flag": false,
       "exhaustion_warning": "No",
-      "score": 43.9,
-      "signal": "MODERATE BTST (Bullish)",
+      "score": 63.1,
+      "signal": "STRONG BTST (Bullish)",
       "bias": "BULL",
       "trade_taken": true,
-      "structure": "Bull Call Debit Spread (25150/25450 CE)",
-      "option_type": "CE_SPREAD",
+      "structure": "Slightly ITM Call (25150 CE)",
+      "option_type": "CE",
       "k_long": 25150.0,
-      "k_short": 25450.0,
+      "k_short": null,
       "dte_entry": 4,
       "lot_size": 75,
-      "entry_premium_pts": 110.35,
-      "stop_loss": "Break below 3:00-3:30 PM Low (25,097.10)",
-      "stop_loss_level": 25097.1,
+      "entry_premium_pts": 256.61,
+      "stop_loss": "Break below 3:00-3:30 PM Low (25,202.50)",
+      "stop_loss_level": 25202.5,
       "exit_rule": "Book 50-100% at 9:15-9:20 AM gap open",
       "hw_details": [
         [
           "HDFCBANK",
-          60.0
+          92.1
         ],
         [
           "RELIANCE",
-          58.8
+          82.6
         ],
         [
           "ICICIBANK",
-          88.8
+          39.9
         ],
         [
           "INFY",
-          30.8
+          32.4
         ],
         [
           "TCS",
-          14.6
+          27.4
         ],
         [
           "AXISBANK",
-          36.0
+          50.8
         ],
         [
           "SBIN",
-          35.9
+          42.3
         ],
         [
           "KOTAKBANK",
-          79.5
+          49.3
         ]
       ]
     },
     "bank_nifty": {
-      "trade_id": "2026-11-13_BANKNIFTY",
+      "trade_id": "2026-11-16_BANKNIFTY",
       "symbol": "^NSEBANK",
       "label": "Bank Nifty",
-      "entry_date": "2026-11-13",
-      "weekday": "Fri",
-      "is_friday": true,
-      "spot": 61034.1,
-      "sma20": 56496.99,
+      "entry_date": "2026-11-16",
+      "weekday": "Mon",
+      "is_friday": false,
+      "spot": 61575.9,
+      "sma20": 56785.26,
       "trend": "ABOVE 20-DMA",
       "vwap_label": "TWAP",
-      "vwap": 60998.5,
-      "clv_pct": 48.7,
-      "r_intra_pct": -0.43,
-      "late_surge_pct": 0.15,
-      "hw_sync_pct": 64.5,
-      "india_vix_entry": 15.49,
+      "vwap": 61470.37,
+      "clv_pct": 72.2,
+      "r_intra_pct": 0.57,
+      "late_surge_pct": 0.26,
+      "hw_sync_pct": 60.7,
+      "india_vix_entry": 15.68,
       "exhaustion_flag": false,
       "exhaustion_warning": "No",
-      "score": 45.9,
-      "signal": "MODERATE BTST (Bullish)",
+      "score": 62.2,
+      "signal": "STRONG BTST (Bullish)",
       "bias": "BULL",
       "trade_taken": true,
-      "structure": "Bull Call Debit Spread (61000/62500 CE)",
-      "option_type": "CE_SPREAD",
+      "structure": "Slightly ITM Call (61000 CE)",
+      "option_type": "CE",
       "k_long": 61000.0,
-      "k_short": 62500.0,
+      "k_short": null,
       "dte_entry": 15,
       "lot_size": 30,
-      "entry_premium_pts": 575.14,
-      "stop_loss": "Break below 3:00-3:30 PM Low (60,921.00)",
-      "stop_loss_level": 60921.0,
+      "entry_premium_pts": 1200.6,
+      "stop_loss": "Break below 3:00-3:30 PM Low (61,369.70)",
+      "stop_loss_level": 61369.7,
       "exit_rule": "Book 50-100% at 9:15-9:20 AM gap open",
       "hw_details": [
         [
           "HDFCBANK",
-          60.0
+          92.1
         ],
         [
           "ICICIBANK",
-          88.8
+          39.9
         ],
         [
           "SBIN",
-          35.9
+          42.3
         ],
         [
           "AXISBANK",
-          36.0
+          50.8
         ],
         [
           "KOTAKBANK",
-          79.5
+          49.3
         ]
       ]
     }
   },
   "paper_trading_stats": {
     "total_sessions_logged": 120,
-    "settled_sessions": 118,
-    "open_sessions": 2,
-    "active_trades_taken": 73,
-    "wins": 22,
-    "losses": 51,
-    "win_rate_pct": 30.14,
-    "total_option_pnl_pts": -728.54,
-    "total_option_pnl_inr": -27506.77,
-    "avg_roi_pct": -4.72,
+    "settled_sessions": 120,
+    "open_sessions": 0,
+    "active_trades_taken": 75,
+    "wins": 23,
+    "losses": 52,
+    "win_rate_pct": 30.67,
+    "total_option_pnl_pts": -706.78,
+    "total_option_pnl_inr": -27268.49,
+    "avg_roi_pct": -4.64,
     "by_index": {
       "Nifty 50": {
-        "trades": 38,
+        "trades": 39,
         "wins": 11,
-        "win_rate_pct": 28.95,
-        "directional_gap_pts": 349.35,
-        "option_pnl_inr": -9419.41,
-        "avg_roi_pct": -7.15
+        "win_rate_pct": 28.21,
+        "directional_gap_pts": 411.2,
+        "option_pnl_inr": -10109.78,
+        "avg_roi_pct": -7.18
       },
       "Bank Nifty": {
-        "trades": 35,
-        "wins": 11,
-        "win_rate_pct": 31.43,
-        "directional_gap_pts": 1320.35,
-        "option_pnl_inr": -18087.36,
-        "avg_roi_pct": -2.09
+        "trades": 36,
+        "wins": 12,
+        "win_rate_pct": 33.33,
+        "directional_gap_pts": 1516.15,
+        "option_pnl_inr": -17158.71,
+        "avg_roi_pct": -1.88
       }
     }
   }

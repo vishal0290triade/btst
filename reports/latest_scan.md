@@ -1,36 +1,36 @@
 ## BTST / STBT Automated Scan Report
-- **Run Time (IST):** `2026-11-13 23:20:39`
-- **India VIX:** `15.49`
+- **Run Time (IST):** `2026-11-16 17:38:10`
+- **India VIX:** `15.68`
 
 | Metric | Nifty 50 (`^NSEI`) | Bank Nifty (`^NSEBANK`) |
 | :--- | :--- | :--- |
-| **Session Date** | `2026-11-13` | `2026-11-13` |
-| **Spot / 20-DMA** | `25,144.30` (ABOVE 20-DMA: `23,642.28`) | `61,034.10` (ABOVE 20-DMA: `56,496.99`) |
-| **Intraday Benchmark** | `25,142.17` (TWAP) | `60,998.50` (TWAP) |
-| **CLV / Day Body / Late Surge** | `47.0%` / `-0.23%` / `+0.23%` | `48.7%` / `-0.43%` / `+0.15%` |
-| **Heavyweight Sync** | `55.1%` | `64.5%` |
-| **BTST Score & Signal** | **`+43.9 / 100`** — MODERATE BTST (Bullish) | **`+45.9 / 100`** — MODERATE BTST (Bullish) |
-| **Paper Trade Structure** | Bull Call Debit Spread (25150/25450 CE) (`110.35` pts) | Bull Call Debit Spread (61000/62500 CE) (`575.14` pts) |
-| **Stop-Loss** | Break below 3:00-3:30 PM Low (25,097.10) | Break below 3:00-3:30 PM Low (60,921.00) |
+| **Session Date** | `2026-11-16` | `2026-11-16` |
+| **Spot / 20-DMA** | `25,291.10` (ABOVE 20-DMA: `23,756.97`) | `61,575.90` (ABOVE 20-DMA: `56,785.26`) |
+| **Intraday Benchmark** | `25,247.65` (TWAP) | `61,470.37` (TWAP) |
+| **CLV / Day Body / Late Surge** | `71.9%` / `+0.34%` / `+0.29%` | `72.2%` / `+0.57%` / `+0.26%` |
+| **Heavyweight Sync** | `60.5%` | `60.7%` |
+| **BTST Score & Signal** | **`+63.1 / 100`** — STRONG BTST (Bullish) | **`+62.2 / 100`** — STRONG BTST (Bullish) |
+| **Paper Trade Structure** | Slightly ITM Call (25150 CE) (`256.61` pts) | Slightly ITM Call (61000 CE) (`1200.60` pts) |
+| **Stop-Loss** | Break below 3:00-3:30 PM Low (25,202.50) | Break below 3:00-3:30 PM Low (61,369.70) |
 | **Morning Exit** | Book 50-100% at 9:15-9:20 AM gap open | Book 50-100% at 9:15-9:20 AM gap open |
 
 ### Heavyweight Constituent CLV Breakdown
-- **Nifty 50:** `HDFCBANK: 60%`, `RELIANCE: 59%`, `ICICIBANK: 89%`, `INFY: 31%`, `TCS: 15%`, `AXISBANK: 36%`, `SBIN: 36%`, `KOTAKBANK: 80%`
-- **Bank Nifty:** `HDFCBANK: 60%`, `ICICIBANK: 89%`, `SBIN: 36%`, `AXISBANK: 36%`, `KOTAKBANK: 80%`
+- **Nifty 50:** `HDFCBANK: 92%`, `RELIANCE: 83%`, `ICICIBANK: 40%`, `INFY: 32%`, `TCS: 27%`, `AXISBANK: 51%`, `SBIN: 42%`, `KOTAKBANK: 49%`
+- **Bank Nifty:** `HDFCBANK: 92%`, `ICICIBANK: 40%`, `SBIN: 42%`, `AXISBANK: 51%`, `KOTAKBANK: 49%`
 
 ---
 
 ## Paper Trading Cumulative Summary
-- **Retained Dataset:** `120` sessions (`118` settled, `2` open) — see [paper_trades.csv](paper_trades.csv) & [paper_trades_summary.md](paper_trades_summary.md)
-- **Active Trades Taken:** `73` (`22W / 51L`, **30.14%** win rate)
-- **Cumulative Option P&L:** **`₹-27,506.77`** (`-4.72%` avg ROI/trade)
+- **Retained Dataset:** `120` sessions (`120` settled, `0` open) — see [paper_trades.csv](paper_trades.csv) & [paper_trades_summary.md](paper_trades_summary.md)
+- **Active Trades Taken:** `75` (`23W / 52L`, **30.67%** win rate)
+- **Cumulative Option P&L:** **`₹-27,268.49`** (`-4.64%` avg ROI/trade)
 
 ### Recent 15 Paper Trades
 
 | Date | Index | Score | Structure | Entry Spot | Exit Open | Gap % | Option P&L (INR) | ROI % | Status |
 | :--- | :--- | ---: | :--- | ---: | ---: | ---: | ---: | ---: | :--- |
-| 2026-11-13 | Nifty 50 | +43.9 | Bull Call Debit Spread (25150/25450 CE) | 25,144.30 | - | - | - | - | OPEN |
-| 2026-11-13 | Bank Nifty | +45.9 | Bull Call Debit Spread (61000/62500 CE) | 61,034.10 | - | - | - | - | OPEN |
+| 2026-11-13 | Nifty 50 | +43.9 | Bull Call Debit Spread (25150/25450 CE) | 25,144.30 | 25,206.15 | +0.25% | ₹-690.37 | -8.34% | LOSS |
+| 2026-11-13 | Bank Nifty | +45.9 | Bull Call Debit Spread (61000/62500 CE) | 61,034.10 | 61,229.90 | +0.32% | ₹+928.65 | +5.38% | WIN |
 | 2026-11-12 | Nifty 50 | +61.3 | Bull Call Debit Spread (25300/25600 CE) | 25,299.35 | 25,201.90 | -0.39% | ₹-2,643.42 | -30.86% | LOSS |
 | 2026-11-12 | Bank Nifty | +80.6 | Bull Call Debit Spread (61500/63100 CE) | 61,518.50 | 61,300.55 | -0.35% | ₹-2,457.23 | -13.49% | LOSS |
 | 2026-11-11 | Nifty 50 | +3.7 | Stay in Cash (no directional edge) | 25,255.05 | 25,213.50 | -0.16% | ₹+0.00 | +0.00% | NO_TRADE |
