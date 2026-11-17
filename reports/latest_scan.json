@@ -1,6 +1,6 @@
 {
-  "generated_at_ist": "2026-11-17T18:03:22.345776+05:30",
-  "india_vix": 15.52,
+  "generated_at_ist": "2026-11-18T00:14:32.030888+05:30",
+  "india_vix": 15.68,
   "indices": {
     "nifty_50": {
       "trade_id": "2026-11-17_NIFTY",
@@ -18,7 +18,7 @@
       "r_intra_pct": 0.44,
       "late_surge_pct": -0.3,
       "hw_sync_pct": 53.9,
-      "india_vix_entry": 15.52,
+      "india_vix_entry": 15.68,
       "exhaustion_flag": false,
       "exhaustion_warning": "No",
       "score": -4.1,
@@ -86,7 +86,7 @@
       "r_intra_pct": 1.16,
       "late_surge_pct": -0.19,
       "hw_sync_pct": 57.0,
-      "india_vix_entry": 15.52,
+      "india_vix_entry": 15.68,
       "exhaustion_flag": false,
       "exhaustion_warning": "No",
       "score": 50.0,
@@ -99,7 +99,7 @@
       "k_short": null,
       "dte_entry": 15,
       "lot_size": 30,
-      "entry_premium_pts": 1200.99,
+      "entry_premium_pts": 1208.45,
       "stop_loss": "Break below 3:00-3:30 PM Low (62,207.10)",
       "stop_loss_level": 62207.1,
       "exit_rule": "Book 50-100% at 9:15-9:20 AM gap open",
@@ -128,9 +128,9 @@
     }
   },
   "paper_trading_stats": {
-    "total_sessions_logged": 122,
+    "total_sessions_logged": 124,
     "settled_sessions": 122,
-    "open_sessions": 0,
+    "open_sessions": 2,
     "active_trades_taken": 77,
     "wins": 23,
     "losses": 54,
