@@ -1,22 +1,22 @@
 # BTST / STBT Paper Trading Ledger & Testing Dataset
 
-- **Total Sessions Retained:** `124` (`122` settled, `2` open)
-- **Active Trades Taken (`|Score| >= 30`):** `77` (`23W / 54L`, **29.87%** win rate)
-- **Cumulative Option P&L:** **`₹-32,031.56`** (`-810.04` option pts | `-4.78%` avg ROI/trade)
+- **Total Sessions Retained:** `124` (`124` settled, `0` open)
+- **Active Trades Taken (`|Score| >= 30`):** `78` (`23W / 55L`, **29.49%** win rate)
+- **Cumulative Option P&L:** **`₹-35,027.75`** (`-909.91` option pts | `-4.82%` avg ROI/trade)
 
 ## Performance Breakdown by Index
 
 | Index | Lot Size | Trades Taken | Wins | Win Rate | Directional Gap Pts | Avg ROI / Trade | Option P&L (INR) |
 | :--- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | Nifty 50 | 75 | 40 | 11 | 27.50% | +397.40 | -7.37% | ₹-12,885.02 |
-| Bank Nifty | 30 | 37 | 12 | 32.43% | +1501.25 | -1.98% | ₹-19,146.54 |
+| Bank Nifty | 30 | 38 | 12 | 31.58% | +1459.75 | -2.14% | ₹-22,142.73 |
 
 ## Complete Paper Trade Log (Newest First)
 
 | Entry Date | Index | Score | Signal | Structure | Entry Spot | Exit Open | Gap % | Entry Prem | Exit Prem | ROI % | P&L (INR) | Status |
 | :--- | :--- | ---: | :--- | :--- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | :--- |
-| 2026-11-17 (Tue) | Nifty 50 | -4.1 | NO TRADE / NEUTRAL | Stay in Cash (no directional edge) | 25,387.40 | - | - | 0.00 | - | - | - | NO_TRADE_OPEN |
-| 2026-11-17 (Tue) | Bank Nifty | +50.0 | MODERATE BTST (Bullish) | Slightly ITM Call (61700 CE) | 62,273.25 | - | - | 1208.45 | - | - | - | OPEN |
+| 2026-11-17 (Tue) | Nifty 50 | -4.1 | NO TRADE / NEUTRAL | Stay in Cash (no directional edge) | 25,387.40 | 25,323.15 | -0.25% | 0.00 | 0.00 | +0.00% | ₹+0.00 | NO_TRADE |
+| 2026-11-17 (Tue) | Bank Nifty | +50.0 | MODERATE BTST (Bullish) | Slightly ITM Call (61700 CE) | 62,273.25 | 62,231.75 | -0.07% | 1208.45 | 1108.58 | -8.26% | ₹-2,996.19 | LOSS |
 | 2026-11-16 (Mon) | Nifty 50 | +63.1 | STRONG BTST (Bullish) | Slightly ITM Call (25150 CE) | 25,291.10 | 25,277.30 | -0.05% | 254.88 | 217.88 | -14.52% | ₹-2,775.24 | LOSS |
 | 2026-11-16 (Mon) | Bank Nifty | +62.2 | STRONG BTST (Bullish) | Slightly ITM Call (61000 CE) | 61,575.90 | 61,561.00 | -0.02% | 1192.43 | 1126.17 | -5.56% | ₹-1,987.83 | LOSS |
 | 2026-11-13 (Fri) | Nifty 50 | +43.9 | MODERATE BTST (Bullish) | Bull Call Debit Spread (25150/25450 CE) | 25,144.30 | 25,206.15 | +0.25% | 110.35 | 101.15 | -8.34% | ₹-690.37 | LOSS |

@@ -1,15 +1,15 @@
 {
   "stats": {
     "total_sessions_logged": 124,
-    "settled_sessions": 122,
-    "open_sessions": 2,
-    "active_trades_taken": 77,
+    "settled_sessions": 124,
+    "open_sessions": 0,
+    "active_trades_taken": 78,
     "wins": 23,
-    "losses": 54,
-    "win_rate_pct": 29.87,
-    "total_option_pnl_pts": -810.04,
-    "total_option_pnl_inr": -32031.56,
-    "avg_roi_pct": -4.78,
+    "losses": 55,
+    "win_rate_pct": 29.49,
+    "total_option_pnl_pts": -909.91,
+    "total_option_pnl_inr": -35027.75,
+    "avg_roi_pct": -4.82,
     "by_index": {
       "Nifty 50": {
         "trades": 40,
@@ -20,12 +20,12 @@
         "avg_roi_pct": -7.37
       },
       "Bank Nifty": {
-        "trades": 37,
+        "trades": 38,
         "wins": 12,
-        "win_rate_pct": 32.43,
-        "directional_gap_pts": 1501.25,
-        "option_pnl_inr": -19146.54,
-        "avg_roi_pct": -1.98
+        "win_rate_pct": 31.58,
+        "directional_gap_pts": 1459.75,
+        "option_pnl_inr": -22142.73,
+        "avg_roi_pct": -2.14
       }
     }
   },
@@ -5306,18 +5306,18 @@
       "lot_size": 30,
       "entry_premium_pts": 1208.45,
       "stop_loss_level": 62207.1,
-      "status": "OPEN",
-      "exit_date": null,
-      "hold_calendar_days": null,
-      "exit_open_spot": null,
-      "india_vix_exit": null,
-      "actual_gap_pts": null,
-      "actual_gap_pct": null,
-      "exit_premium_pts": null,
-      "option_pnl_pts": null,
-      "option_roi_pct": null,
-      "option_pnl_inr": null,
-      "outcome": "OPEN"
+      "status": "SETTLED",
+      "exit_date": "2026-11-18",
+      "hold_calendar_days": 1,
+      "exit_open_spot": 62231.75,
+      "india_vix_exit": 15.52,
+      "actual_gap_pts": -41.5,
+      "actual_gap_pct": -0.0666,
+      "exit_premium_pts": 1108.58,
+      "option_pnl_pts": -99.87,
+      "option_roi_pct": -8.26,
+      "option_pnl_inr": -2996.19,
+      "outcome": "LOSS"
     },
     {
       "trade_id": "2026-11-17_NIFTY",
@@ -5349,18 +5349,18 @@
       "lot_size": 75,
       "entry_premium_pts": 0.0,
       "stop_loss_level": null,
-      "status": "OPEN",
-      "exit_date": null,
-      "hold_calendar_days": null,
-      "exit_open_spot": null,
-      "india_vix_exit": null,
-      "actual_gap_pts": null,
-      "actual_gap_pct": null,
-      "exit_premium_pts": null,
-      "option_pnl_pts": null,
-      "option_roi_pct": null,
-      "option_pnl_inr": null,
-      "outcome": "NO_TRADE_OPEN"
+      "status": "SETTLED",
+      "exit_date": "2026-11-18",
+      "hold_calendar_days": 1,
+      "exit_open_spot": 25323.15,
+      "india_vix_exit": 15.52,
+      "actual_gap_pts": -64.25,
+      "actual_gap_pct": -0.2531,
+      "exit_premium_pts": 0.0,
+      "option_pnl_pts": 0.0,
+      "option_roi_pct": 0.0,
+      "option_pnl_inr": 0.0,
+      "outcome": "NO_TRADE"
     }
   ]
 }
