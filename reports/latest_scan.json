@@ -1,5 +1,5 @@
 {
-  "generated_at_ist": "2026-11-18T17:51:12.136604+05:30",
+  "generated_at_ist": "2026-11-18T23:52:43.581180+05:30",
   "india_vix": 15.52,
   "indices": {
     "nifty_50": {
@@ -13,7 +13,7 @@
       "sma20": 23985.98,
       "trend": "ABOVE 20-DMA",
       "vwap_label": "TWAP",
-      "vwap": 25234.1,
+      "vwap": 25234.11,
       "clv_pct": 34.6,
       "r_intra_pct": -0.38,
       "late_surge_pct": -0.08,
@@ -81,7 +81,7 @@
       "sma20": 57434.25,
       "trend": "ABOVE 20-DMA",
       "vwap_label": "TWAP",
-      "vwap": 62049.53,
+      "vwap": 62049.51,
       "clv_pct": 46.0,
       "r_intra_pct": -0.31,
       "late_surge_pct": -0.04,
@@ -128,9 +128,9 @@
     }
   },
   "paper_trading_stats": {
-    "total_sessions_logged": 124,
+    "total_sessions_logged": 126,
     "settled_sessions": 124,
-    "open_sessions": 0,
+    "open_sessions": 2,
     "active_trades_taken": 78,
     "wins": 23,
     "losses": 55,
