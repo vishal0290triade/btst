@@ -1,6 +1,6 @@
 # BTST / STBT Paper Trading Ledger & Testing Dataset
 
-- **Total Sessions Retained:** `126` (`126` settled, `0` open)
+- **Total Sessions Retained:** `128` (`126` settled, `2` open)
 - **Active Trades Taken (`|Score| >= 30`):** `78` (`23W / 55L`, **29.49%** win rate)
 - **Cumulative Option P&L:** **`₹-35,027.75`** (`-909.91` option pts | `-4.82%` avg ROI/trade)
 
@@ -15,6 +15,8 @@
 
 | Entry Date | Index | Score | Signal | Structure | Entry Spot | Exit Open | Gap % | Entry Prem | Exit Prem | ROI % | P&L (INR) | Status |
 | :--- | :--- | ---: | :--- | :--- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | :--- |
+| 2026-11-19 (Thu) | Nifty 50 | +55.9 | STRONG BTST (Bullish) | Slightly ITM Call (25400 CE) | 25,514.30 | - | - | 240.03 | - | - | - | OPEN |
+| 2026-11-19 (Thu) | Bank Nifty | +59.3 | STRONG BTST (Bullish) | Slightly ITM Call (62500 CE) | 63,063.00 | - | - | 1207.40 | - | - | - | OPEN |
 | 2026-11-18 (Wed) | Nifty 50 | -14.1 | NO TRADE / NEUTRAL | Stay in Cash (no directional edge) | 25,227.95 | 25,186.80 | -0.16% | 0.00 | 0.00 | +0.00% | ₹+0.00 | NO_TRADE |
 | 2026-11-18 (Wed) | Bank Nifty | -2.3 | NO TRADE / NEUTRAL | Stay in Cash (no directional edge) | 62,038.65 | 62,060.75 | +0.04% | 0.00 | 0.00 | +0.00% | ₹+0.00 | NO_TRADE |
 | 2026-11-17 (Tue) | Nifty 50 | -4.1 | NO TRADE / NEUTRAL | Stay in Cash (no directional edge) | 25,387.40 | 25,323.15 | -0.25% | 0.00 | 0.00 | +0.00% | ₹+0.00 | NO_TRADE |
