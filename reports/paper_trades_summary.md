@@ -15,8 +15,8 @@
 
 | Entry Date | Index | Score | Signal | Structure | Entry Spot | Exit Open | Gap % | Entry Prem | Exit Prem | ROI % | P&L (INR) | Status |
 | :--- | :--- | ---: | :--- | :--- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | :--- |
-| 2026-11-20 (Fri) | Nifty 50 | +52.2 | MODERATE BTST (Bullish) | Bull Call Debit Spread (25800/26150 CE) | 25,800.60 | - | - | 129.22 | - | - | - | OPEN |
-| 2026-11-20 (Fri) | Bank Nifty | +53.1 | MODERATE BTST (Bullish) | Bull Call Debit Spread (64600/66400 CE) | 64,635.20 | - | - | 678.29 | - | - | - | OPEN |
+| 2026-11-20 (Fri) | Nifty 50 | +52.2 | MODERATE BTST (Bullish) | Bull Call Debit Spread (25800/26100 CE) | 25,800.60 | - | - | 114.28 | - | - | - | OPEN |
+| 2026-11-20 (Fri) | Bank Nifty | +53.1 | MODERATE BTST (Bullish) | Bull Call Debit Spread (64600/66300 CE) | 64,635.20 | - | - | 641.93 | - | - | - | OPEN |
 | 2026-11-19 (Thu) | Nifty 50 | +55.9 | STRONG BTST (Bullish) | Slightly ITM Call (25400 CE) | 25,514.30 | 25,367.90 | -0.57% | 240.03 | 126.96 | -47.11% | ₹-8,480.46 | LOSS |
 | 2026-11-19 (Thu) | Bank Nifty | +59.3 | STRONG BTST (Bullish) | Slightly ITM Call (62500 CE) | 63,063.00 | 62,648.65 | -0.66% | 1207.40 | 885.92 | -26.63% | ₹-9,644.28 | LOSS |
 | 2026-11-18 (Wed) | Nifty 50 | -14.1 | NO TRADE / NEUTRAL | Stay in Cash (no directional edge) | 25,227.95 | 25,186.80 | -0.16% | 0.00 | 0.00 | +0.00% | ₹+0.00 | NO_TRADE |
